@@ -36,3 +36,19 @@ python3 -m pip install -r requirements.txt
 4. Select a compatible Python environment and execute the cells in order.
 
 **Note:** The notebook requires an internet connection to download the Telco Customer Churn dataset.
+
+## Model Performance
+
+The Artificial Neural Network was evaluated on a held-out test set of 1,407 observations.
+
+| Metric | Result |
+|---|---|
+| Accuracy | 78.9% |
+| ROC-AUC | 0.820 |
+| Churn Precision | 64% |
+| Churn Recall | 47% |
+| Churn F1-score | 0.54 |
+
+The model demonstrates useful discrimination between churn and non-churn customers. However, churn recall of 47% indicates that more than half of actual churn cases were missed at the selected classification threshold of 0.5. Improving recall is therefore an important area for future work.
+
+*Results correspond to the saved notebook execution and may vary between training runs.*
